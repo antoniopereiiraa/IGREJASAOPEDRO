@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>Ministérios - Igreja São Pedro</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="icon" href="/img/christianity.png" type="image/png">
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <i class="fas fa-church"></i>
+          <span>São Pedro</span>
+        </div>
+        <button class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-links">
+          <a href="/">Início</a>
+          <a href="/sobre.html">Sobre</a>
+          <a href="/horarios.html">Horários</a>
+          <a href="/ministerios.html" aria-current="page">Ministérios</a>
+          <a href="/galeria.html">Galeria</a>
+          <a href="/contato.html">Contato</a>
+        </div>
+      </div>
+    </nav>
+    
+    <main class="page-content">
+      <h1>Nossos Ministérios</h1>
+      <div class="content-section">
+        <div class="ministry-grid">
+          <div class="ministry-card">
+            <i class="fas fa-music"></i>
+            <h3>Ministério de Música</h3>
+            <p>Animação das celebrações através do canto litúrgico</p>
+            <p>Ensaios: Quinta-feira às 19h30</p>
+          </div>
+
+          <div class="ministry-card">
+            <i class="fas fa-book-reader"></i>
+            <h3>Catequese</h3>
+            <p>Formação religiosa para crianças, jovens e adultos</p>
+            <p>Sábados às 14h</p>
+          </div>
+
+          <div class="ministry-card">
+            <i class="fas fa-hands-helping"></i>
+            <h3>Pastoral Social</h3>
+            <p>Assistência às famílias carentes da comunidade</p>
+            <p>Atendimento: Segunda e Quarta</p>
+          </div>
+
+          <div class="ministry-card">
+            <i class="fas fa-heart"></i>
+            <h3>Pastoral Familiar</h3>
+            <p>Acompanhamento e apoio às famílias</p>
+            <p>Encontros mensais</p>
+          </div>
+
+          <div class="ministry-card">
+            <i class="fas fa-cross"></i>
+            <h3>Liturgia</h3>
+            <p>Preparação das celebrações litúrgicas</p>
+            <p>Reuniões: Terça às 19h</p>
+          </div>
+
+          <div class="ministry-card">
+            <i class="fas fa-child"></i>
+            <h3>Pastoral da Criança</h3>
+            <p>Acompanhamento de gestantes e crianças</p>
+            <p>Atendimento: Quinta-feira</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Endereço</h3>
+          <p>Rua São Pedro, 123</p>
+          <p>Cidade - Estado</p>
+        </div>
+        <div class="footer-section">
+          <h3>Contato</h3>
+          <p>Tel: (11) 1234-5678</p>
+          <p>Email: contato@igrejasaopedro.com</p>
+        </div>
+        <div class="footer-section">
+          <h3>Redes Sociais</h3>
+          <h3>Redes Sociais</h3>
+          <div class="social-links">
+            <a href="https://www.facebook.com/igrejasaopedro" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/igrejasaopedro" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/@igrejasaopedro" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Igreja São Pedro. Todos os direitos reservados.</p>
+        <p>Feito com muito amor por Antonio Pereira</p>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        mobileMenuBtn.addEventListener('click', function() {
+          navLinks.classList.toggle('active');
+          this.classList.toggle('active');
+        });
+      });
+    </script>
+  </body>
+</html>

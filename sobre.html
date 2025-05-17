@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>Sobre - Igreja São Pedro</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="icon" href="/img/christianity.png" type="image/png">
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <i class="fas fa-church"></i>
+          <span>São Pedro</span>
+        </div>
+        <button class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-links">
+          <a href="/">Início</a>
+          <a href="/sobre.html" aria-current="page">Sobre</a>
+          <a href="/horarios.html">Horários</a>
+          <a href="/ministerios.html">Ministérios</a>
+          <a href="/galeria.html">Galeria</a>
+          <a href="/contato.html">Contato</a>
+        </div>
+      </div>
+    </nav>
+    
+    <main class="page-content">
+      <h1>Sobre Nossa Igreja</h1>
+      <div class="content-section">
+        <h2>História</h2>
+        <p>A Igreja São Pedro foi fundada em [ano] e desde então serve à comunidade católica local. Nossa paróquia é dedicada ao apóstolo São Pedro, o primeiro Papa da Igreja Católica.</p>
+        
+        <h2>Nossa Missão</h2>
+        <p>Nossa missão é propagar a fé católica, seguindo os ensinamentos de Jesus Cristo e da Igreja, promovendo a evangelização e o serviço ao próximo.</p>
+        
+        <h2>Nosso Pároco</h2>
+        <div class="priest-section">
+          <img src="https://images.unsplash.com/photo-1594008671689-b4d4f3fee90f?auto=format&fit=crop&w=300&h=300&q=80" alt="Padre" class="priest-photo">
+          <div class="priest-info">
+            <h3>Pe. João Silva</h3>
+            <p>Pároco desde 2020</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Endereço</h3>
+          <p>Rua São Pedro, 123</p>
+          <p>Cidade - Estado</p>
+        </div>
+        <div class="footer-section">
+          <h3>Contato</h3>
+          <p>Tel: (11) 1234-5678</p>
+          <p>Email: contato@igrejasaopedro.com</p>
+        </div>
+        <div class="footer-section">
+          <h3>Redes Sociais</h3>
+          <h3>Redes Sociais</h3>
+          <div class="social-links">
+            <a href="https://www.facebook.com/igrejasaopedro" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/igrejasaopedro" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/@igrejasaopedro" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Igreja São Pedro. Todos os direitos reservados.</p>
+        <p>Feito com muito amor por Antonio Pereira</p>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        mobileMenuBtn.addEventListener('click', function() {
+          navLinks.classList.toggle('active');
+          this.classList.toggle('active');
+        });
+      });
+    </script>
+  </body>
+</html>
