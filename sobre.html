@@ -1,98 +1,195 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <title>Sobre - Igreja São Pedro</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-    <link rel="icon" href="/img/christianity.png" type="image/png">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="description" content="Conheça a história da Paróquia São Pedro, nossa missão pastoral, nossos padres e o compromisso sociocultural com a comunidade." />
+    <title>Sobre Nós - Paróquia São Pedro</title>
+    
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/img/christianity.png" type="image/png" />
+  </head>
   <body>
-    <nav>
-      <div class="nav-container">
-        <div class="nav-logo">
-          <i class="fas fa-church"></i>
-          <span>São Pedro</span>
-        </div>
-        <button class="mobile-menu-btn">
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+    <!-- NAVEGAÇÃO -->
+    <header class="site-header">
+      <nav class="nav-container" aria-label="Navegação Principal">
+        <a href="/" class="nav-brand">
+          <img src="/img/christianity.png" alt="Cruz de São Pedro" />
+          <div class="nav-brand-title">
+            <span class="title-main">São Pedro</span>
+            <span class="title-sub">Paróquia & Comunidade</span>
+          </div>
+        </a>
+
+        <button class="mobile-menu-btn" aria-label="Abrir Menu de Navegação" aria-expanded="false">
           <i class="fas fa-bars"></i>
         </button>
-        <div class="nav-links">
+
+        <div class="nav-menu">
           <a href="/">Início</a>
-          <a href="/sobre.html" aria-current="page">Sobre</a>
+          <a href="/sobre.html" class="active" aria-current="page">Sobre</a>
+          <a href="/festejo.html" class="nav-highlight"><i class="fas fa-fire"></i> Festejo de São Pedro</a>
+          <a href="/capoeira.html"><i class="fas fa-drum"></i> Capoeira & Cultura</a>
+          <a href="/agenda.html"><i class="fas fa-calendar-alt"></i> Agenda</a>
           <a href="/horarios.html">Horários</a>
           <a href="/ministerios.html">Ministérios</a>
           <a href="/galeria.html">Galeria</a>
           <a href="/contato.html">Contato</a>
         </div>
+      </nav>
+    </header>
+
+    <!-- BANNER DA PÁGINA -->
+    <header class="page-header" id="main-content">
+      <div class="breadcrumbs">
+        <a href="/">Início</a> <span>/</span> <strong>Sobre Nós</strong>
       </div>
-    </nav>
-    
-    <main class="page-content">
-      <h1>Sobre Nossa Igreja</h1>
-      <div class="content-section">
-        <h2>História</h2>
-        <p>A Igreja São Pedro foi fundada em [ano] e desde então serve à comunidade católica local. Nossa paróquia é dedicada ao apóstolo São Pedro, o primeiro Papa da Igreja Católica.</p>
-        
-        <h2>Nossa Missão</h2>
-        <p>Nossa missão é propagar a fé católica, seguindo os ensinamentos de Jesus Cristo e da Igreja, promovendo a evangelização e o serviço ao próximo.</p>
-        
-        <h2>Nosso Pároco</h2>
-        <div class="priest-section">
-          <img src="https://images.unsplash.com/photo-1594008671689-b4d4f3fee90f?auto=format&fit=crop&w=300&h=300&q=80" alt="Padre" class="priest-photo">
-          <div class="priest-info">
-            <h3>Pe. João Silva</h3>
-            <p>Pároco desde 2020</p>
+      <h1>História e Vocação Comunitária</h1>
+      <p>Um santuário de espiritualidade, caridade ativa e acolhimento cultural no coração da comunidade.</p>
+    </header>
+
+    <main class="container">
+      <div class="grid-2" style="align-items: center; margin-bottom: 4rem;">
+        <div>
+          <span class="badge badge-liturgico" style="margin-bottom: 0.5rem;">Origens & Fé</span>
+          <h2 style="font-size: 2.2rem; color: var(--primary); margin-bottom: 1.25rem;">Nossa Trajetória</h2>
+          <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1rem;">
+            A Paróquia São Pedro nasceu da devoção simples e profunda dos pescadores, artesãos e famílias trabalhadoras. Erguida com pedras, fé e mutirões comunitários, a capela tornou-se o ponto central da vida social, litúrgica e cultural de toda a vizinhança.
+          </p>
+          <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1.5rem;">
+            Hoje, nossa paróquia é reconhecida não apenas pelas celebrações e orações diárias, mas também como um vibrante polo comunitário que abriga projetos culturais, oficinas gratuitas de capoeira, auxílio a famílias em situação de vulnerabilidade e o tradicional Festejo de São Pedro.
+          </p>
+          <div style="display: flex; gap: 1rem;">
+            <a href="/festejo.html" class="btn btn-primary"><i class="fas fa-fire"></i> O Festejo</a>
+            <a href="/capoeira.html" class="btn btn-culture"><i class="fas fa-drum"></i> Projetos Culturais</a>
           </div>
+        </div>
+
+        <div>
+          <div style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-xl); border: 4px solid #ffffff;">
+            <img src="/img/imgsite.jpg" alt="Interior e comunidade da Paróquia São Pedro" style="width: 100%; height: 380px; object-fit: cover;" />
+          </div>
+        </div>
+      </div>
+
+      <!-- MISSÃO, VISÃO E VALORES -->
+      <div class="grid-3" style="margin-bottom: 4rem;">
+        <div class="card">
+          <div class="card-icon">
+            <i class="fas fa-dove"></i>
+          </div>
+          <h3>Nossa Missão</h3>
+          <p>Evangelizar com alegria através do testemunho do Evangelho, acolher fraternalmente cada pessoa e promover a justiça social e a cultura popular.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon icon-accent">
+            <i class="fas fa-eye"></i>
+          </div>
+          <h3>Nossa Visão</h3>
+          <p>Ser uma paróquia em saída: viva, participativa, solidária, onde a fé se traduz em dignidade humana, educação e valorização das tradições.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon icon-culture">
+            <i class="fas fa-hands-helping"></i>
+          </div>
+          <h3>Nossos Valores</h3>
+          <p>Amor ao próximo, partilha solidária, respeito à diversidade cultural, disciplina, fraternidade comunitária e preservação da memória popular.</p>
+        </div>
+      </div>
+
+      <!-- PÁROCO E LIDERANÇAS -->
+      <div class="section-title">
+        <span class="badge badge-liturgico">Pastoreio</span>
+        <h2>Nosso Pároco</h2>
+        <p>Conheça o sacerdote que guia espiritualmente nossa comunidade paroquial.</p>
+      </div>
+
+      <div class="instructor-card" style="margin-bottom: 4rem;">
+        <img src="https://images.unsplash.com/photo-1594008671689-b4d4f3fee90f?auto=format&fit=crop&w=400&h=400&q=80" alt="Padre João Silva" class="instructor-avatar" />
+        <div class="instructor-info">
+          <h3>Pe. João Silva</h3>
+          <div class="instructor-role"><i class="fas fa-cross"></i> Pároco da Igreja São Pedro</div>
+          <p class="instructor-bio">
+            Dedicado à vida pastoral há mais de 18 anos, Pe. João assumiu a paróquia com a visão de abrir as portas do templo para o bairro inteiro. Ele incentiva ativamente o diálogo entre fé e cultura, sendo um dos principais apoiadores da realização do projeto de capoeira no pátio da igreja e da salvaguarda das tradições do Festejo de São Pedro com o apoio dos órgãos públicos.
+          </p>
+          <p class="instructor-bio" style="font-style: italic; color: var(--primary);">
+            "A Igreja é a casa de todos, onde a fé alimenta a esperança e a cultura expressa a alma do nosso povo."
+          </p>
+        </div>
+      </div>
+
+      <!-- MENÇÃO ÀS PARCERIAS INSTITUCIONAIS -->
+      <div class="culture-featured-banner">
+        <div class="culture-icon-badge">
+          <i class="fas fa-landmark"></i>
+        </div>
+        <div class="culture-banner-text">
+          <span class="badge badge-cultural" style="background: rgba(20, 184, 166, 0.3); color: #99f6e4; margin-bottom: 0.5rem;">Parceria Oficial</span>
+          <h3>Apoio da Secretaria Municipal de Cultura</h3>
+          <p>Nossa atuação sociocultural é desenvolvida em cooperação contínua com a <strong>Secretaria Municipal de Cultura</strong>, valorizando os mestres da cultura popular, fomentando as artes e garantindo que as tradições de São Pedro permaneçam vivas e protegidas.</p>
+        </div>
+        <div class="culture-official-stamp">
+          <span>Cooperação</span>
+          <strong>Cultura & Cidadania</strong>
         </div>
       </div>
     </main>
 
-    <footer>
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>Endereço</h3>
-          <p>Rua São Pedro, 123</p>
-          <p>Cidade - Estado</p>
-        </div>
-        <div class="footer-section">
-          <h3>Contato</h3>
-          <p>Tel: (11) 1234-5678</p>
-          <p>Email: contato@igrejasaopedro.com</p>
-        </div>
-        <div class="footer-section">
-          <h3>Redes Sociais</h3>
-          <h3>Redes Sociais</h3>
-          <div class="social-links">
-            <a href="https://www.facebook.com/igrejasaopedro" target="_blank" rel="noopener noreferrer">
-              <i class="fab fa-facebook"></i>
-            </a>
-            <a href="https://www.instagram.com/igrejasaopedro" target="_blank" rel="noopener noreferrer">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.youtube.com/@igrejasaopedro" target="_blank" rel="noopener noreferrer">
-              <i class="fab fa-youtube"></i>
-            </a>
+    <!-- RODAPÉ -->
+    <footer class="site-footer">
+      <div class="footer-top">
+        <div class="footer-col">
+          <h4>Igreja São Pedro</h4>
+          <p>Comunidade de fé, acolhimento pastoral e promoção da cultura popular.</p>
+          <div class="footer-culture-seal">
+            <h5><i class="fas fa-award"></i> Ponto de Cultura & Tradição</h5>
+            <p>Em cooperação com a <strong>Secretaria Municipal de Cultura</strong>.</p>
           </div>
         </div>
+
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul class="footer-links">
+            <li><a href="/"><i class="fas fa-angle-right"></i> Início</a></li>
+            <li><a href="/sobre.html"><i class="fas fa-angle-right"></i> Sobre Nós</a></li>
+            <li><a href="/festejo.html"><i class="fas fa-angle-right"></i> Festejo de São Pedro</a></li>
+            <li><a href="/capoeira.html"><i class="fas fa-angle-right"></i> Capoeira & Cultura</a></li>
+            <li><a href="/agenda.html"><i class="fas fa-angle-right"></i> Agenda Integrada</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Pastorais</h4>
+          <ul class="footer-links">
+            <li><a href="/ministerios.html"><i class="fas fa-angle-right"></i> Conhecer Ministérios</a></li>
+            <li><a href="/horarios.html"><i class="fas fa-angle-right"></i> Horários de Missas</a></li>
+            <li><a href="/contato.html"><i class="fas fa-angle-right"></i> Falar com a Secretaria</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Secretaria Paroquial</h4>
+          <p><i class="fas fa-map-marker-alt"></i> Rua São Pedro, 123</p>
+          <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
+          <p><i class="fas fa-envelope"></i> contato@igrejasaopedro.com</p>
+        </div>
       </div>
+
       <div class="footer-bottom">
-        <p>&copy; 2025 Igreja São Pedro. Todos os direitos reservados.</p>
-        <p>Feito com muito amor por Antonio Pereira</p>
+        <div class="footer-bottom-inner">
+          <p>&copy; 2026 Paróquia São Pedro. Todos os direitos reservados.</p>
+          <p>Desenvolvido com tecnologia moderna e segura.</p>
+        </div>
       </div>
     </footer>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const navLinks = document.querySelector('.nav-links');
-        
-        mobileMenuBtn.addEventListener('click', function() {
-          navLinks.classList.toggle('active');
-          this.classList.toggle('active');
-        });
-      });
-    </script>
+    <script type="module" src="/script.js"></script>
   </body>
 </html>

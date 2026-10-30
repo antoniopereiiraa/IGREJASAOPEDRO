@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="description" content="Agenda Completa da Paróquia São Pedro - Separação clara entre eventos culturais, tradicionais e celebrações litúrgicas." />
+    <title>Agenda de Eventos - Paróquia São Pedro</title>
+    
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/img/christianity.png" type="image/png" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+    <!-- NAVEGAÇÃO -->
+    <header class="site-header">
+      <nav class="nav-container" aria-label="Navegação Principal">
+        <a href="/" class="nav-brand">
+          <img src="/img/christianity.png" alt="Cruz de São Pedro" />
+          <div class="nav-brand-title">
+            <span class="title-main">São Pedro</span>
+            <span class="title-sub">Paróquia & Comunidade</span>
+          </div>
+        </a>
+
+        <button class="mobile-menu-btn" aria-label="Abrir Menu de Navegação" aria-expanded="false">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="nav-menu">
+          <a href="/">Início</a>
+          <a href="/sobre.html">Sobre</a>
+          <a href="/festejo.html" class="nav-highlight"><i class="fas fa-fire"></i> Festejo de São Pedro</a>
+          <a href="/capoeira.html"><i class="fas fa-drum"></i> Capoeira & Cultura</a>
+          <a href="/agenda.html" class="active" aria-current="page"><i class="fas fa-calendar-alt"></i> Agenda</a>
+          <a href="/horarios.html">Horários</a>
+          <a href="/ministerios.html">Ministérios</a>
+          <a href="/galeria.html">Galeria</a>
+          <a href="/contato.html">Contato</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- BANNER DA PÁGINA -->
+    <header class="page-header" id="main-content">
+      <div class="breadcrumbs">
+        <a href="/">Início</a> <span>/</span> <strong>Agenda de Eventos</strong>
+      </div>
+      <h1>Agenda da Comunidade</h1>
+      <p>Consulte todos os nossos encontros com separação dedicada entre <strong>atividades culturais</strong> e <strong>celebrações litúrgicas</strong>.</p>
+    </header>
+
+    <main class="container">
+      <!-- LEGENDA EXPLICATIVA DAS CORES -->
+      <div style="background-color: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-bottom: 2.5rem; display: flex; flex-wrap: wrap; justify-content: space-around; gap: 1rem; align-items: center; box-shadow: var(--shadow-sm);">
+        <div style="display: flex; align-items: center; gap: 0.6rem;">
+          <span style="width: 14px; height: 14px; border-radius: 50%; background-color: var(--culture); display: inline-block;"></span>
+          <span style="font-size: 0.92rem; font-weight: 600; color: var(--text-main);">Eventos Culturais & Tradição (Capoeira, Rodas, Oficinas)</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 0.6rem;">
+          <span style="width: 14px; height: 14px; border-radius: 50%; background-color: var(--liturgical); display: inline-block;"></span>
+          <span style="font-size: 0.92rem; font-weight: 600; color: var(--text-main);">Celebrações Litúrgicas & Missas</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 0.6rem;">
+          <span style="width: 14px; height: 14px; border-radius: 50%; background-color: var(--social); display: inline-block;"></span>
+          <span style="font-size: 0.92rem; font-weight: 600; color: var(--text-main);">Ações Sociais & Pastorais</span>
+        </div>
+      </div>
+
+      <!-- FILTRO POR ABAS DINÂMICAS -->
+      <div class="agenda-tabs" role="tablist">
+        <button class="agenda-tab-btn active" data-category="all" role="tab" aria-selected="true">
+          <i class="fas fa-layer-group"></i> Todos os Eventos
+        </button>
+        <button class="agenda-tab-btn" data-category="cultural" role="tab" aria-selected="false">
+          <i class="fas fa-drum"></i> 🎭 Somente Eventos Culturais
+        </button>
+        <button class="agenda-tab-btn" data-category="liturgico" role="tab" aria-selected="false">
+          <i class="fas fa-cross"></i> ⛪ Somente Missas & Liturgia
+        </button>
+        <button class="agenda-tab-btn" data-category="social" role="tab" aria-selected="false">
+          <i class="fas fa-hands-helping"></i> 🤝 Somente Pastoral & Social
+        </button>
+      </div>
+
+      <!-- LISTAGEM COMPLETA DOS EVENTOS -->
+      <div class="agenda-list">
+        <!-- 1. CULTURAL: Roda Aberta de Capoeira -->
+        <article class="event-card event-cultural" data-category="cultural">
+          <div class="event-date-box">
+            <span class="day">12</span>
+            <span class="month">JUN</span>
+            <span class="weekday">Quinta</span>
+          </div>
+          <div class="event-body">
+            <div class="event-header-tags">
+              <span class="badge badge-cultural"><i class="fas fa-drum"></i> Evento Cultural</span>
+              <span class="badge badge-festejo">Capoeira São Pedro</span>
+            </div>
+            <h3>Grande Roda Aberta de Capoeira & Batizado Mirim</h3>
+            <div class="event-meta">
+              <span class="event-time"><i class="far fa-clock"></i> 18h30 às 20h30</span>
+              <span class="event-location"><i class="fas fa-map-marker-alt"></i> Pátio Comunitário São Pedro</span>
+            </div>
+            <p class="event-description">Roda especial com presença de mestres de capoeira convidados da região, entrega de cordéis para os alunos da turma Ginga Mirim e cantoria de domínio popular.</p>
+          </div>
+          <div class="event-actions">
+            <button class="btn btn-sm btn-outline-primary btn-add-calendar" title="Adicionar ao Calendário">
+              <i class="fas fa-calendar-plus"></i> Salvar no Calendário
+            </button>
+          </div>
+        </article>
+
+        <!-- 2. LITÚRGICO: Missa de Corpus Christi -->
+        <article class="event-card event-liturgico" data-category="liturgico">
+          <div class="event-date-box">
+            <span class="day">19</span>
+            <span class="month">JUN</span>
+            <span class="weekday">Quinta</span>
+          </div>
+          <div class="event-body">
+            <div class="event-header-tags">
+              <span class="badge badge-liturgico"><i class="fas fa-church"></i> Solenidade Litúrgica</span>
+            </div>
+            <h3>Solenidade de Corpus Christi e Confecção dos Tapetes</h3>
+            <div class="event-meta">
+              <span class="event-time"><i class="far fa-clock"></i> 07h00 (Tapetes) | 16h00 (Missa)</span>
+              <span class="event-location"><i class="fas fa-map-marker-alt"></i> Rua São Pedro & Templo Principal</span>
+            </div>
+            <p class="event-description">Confecção tradicional dos tapetes devocionais de serragem colorida e farinha com os jovens da paróquia, seguida de missa solene e procissão eucarística.</p>
+          </div>
+          <div class="event-actions">
+            <button class="btn btn-sm btn-outline-primary btn-add-calendar" title="Adicionar ao Calendário">
+              <i class="fas fa-calendar-plus"></i> Salvar no Calendário
+            </button>
+          </div>
+        </article>
+
+        <!-- 3. LITÚRGICO: Novenário de São Pedro -->
+        <article class="event-card event-liturgico" data-category="liturgico">
+          <div class="event-date-box">
+            <span class="day">20</span>
+            <span class="month">JUN</span>
+            <span class="weekday">Sexta</span>
+          </div>
+          <div class="event-body">
+            <div class="event-header-tags">
+              <span class="badge badge-liturgico"><i class="fas fa-fire"></i> Festejo Solene</span>
+              <span class="badge badge-festejo">Novenário</span>
+            </div>
+            <h3>Abertura Oficial do Novenário de São Pedro</h3>
+            <div class="event-meta">
+              <span class="event-time"><i class="far fa-clock"></i> 19h00 (Diariamente até 28/06)</span>
+              <span class="event-location"><i class="fas fa-map-marker-alt"></i> Igreja Matriz de São Pedro</span>
+            </div>
+            <p class="event-description">Hasteamento do estandarte do Apóstolo São Pedro, celebração eucarística solene e bênção especial das chaves para as famílias trabalhadoras.</p>
+          </div>
+          <div class="event-actions">
+            <button class="btn btn-sm btn-outline-primary btn-add-calendar" title="Adicionar ao Calendário">
+              <i class="fas fa-calendar-plus"></i> Salvar no Calendário
+            </button>
+          </div>
+        </article>
+
+        <!-- 4. CULTURAL: Oficina de Ritmos e Berimbau -->
+        <article class="event-card event-cultural" data-category="cultural">
+          <div class="event-date-box">
+            <span class="day">21</span>
+            <span class="month">JUN</span>
+            <span class="weekday">Sábado</span>
+          </div>
+          <div class="event-body">
+            <div class="event-header-tags">
+              <span class="badge badge-cultural"><i class="fas fa-guitar"></i> Oficina Cultural</span>
+            </div>
+            <h3>Oficina de Confecção e Toque de Berimbau</h3>
+            <div class="event-meta">
+              <span class="event-time"><i class="far fa-clock"></i> 14h30 às 17h00</span>
+              <span class="event-location"><i class="fas fa-map-marker-alt"></i> Sala de Cultura e Música</span>
+            </div>
+            <p class="event-description">Atividade prática gratuita ensinando a dobrar a verga de biriba, afinar a cabaça de acordo com os toques de São Bento Grande e Angola, aberta a crianças e jovens.</p>
+          </div>
+          <div class="event-actions">
+            <button class="btn btn-sm btn-outline-primary btn-add-calendar" title="Adicionar ao Calendário">
+              <i class="fas fa-calendar-plus"></i> Salvar no Calendário
+            </button>
+          </div>
+        </article>
+
+        <!-- 5. SOCIAL: Pastoral da Cesta e Solidariedade -->
+        <article class="event-card event-social" data-category="social">
+          <div class="event-date-box">
+            <span class="day">25</span>
+            <span class="month">JUN</span>
+            <span class="weekday">Quarta</span>
+          </div>
+          <div class="event-body">
+            <div class="event-header-tags">
+              <span class="badge badge-social"><i class="fas fa-heart"></i> Ação Social</span>
+            </div>
+            <h3>Distribuição de Alimentos & Mutirão da Pastoral Social</h3>
+            <div class="event-meta">
+              <span class="event-time"><i class="far fa-clock"></i> 09h00 às 12h00</span>
+              <span class="event-location"><i class="fas fa-map-marker-alt"></i> Salão Comunitário São Pedro</span>
+            </div>
+            <p class="event-description">Entrega mensal de cestas de alimentos e atendimento solidário às famílias cadastradas nos projetos da paróquia em parceria com a comunidade.</p>
+          </div>
+          <div class="event-actions">
+            <button class="btn btn-sm btn-outline-primary btn-add-calendar" title="Adicionar ao Calendário">
+              <i class="fas fa-calendar-plus"></i> Salvar no Calendário
+            </button>
+          </div>
+        </article>
+
+        <!-- 6. CULTURAL: Noite do Leilão & Mostra Musical -->
+        <article class="event-card event-cultural" data-category="cultural">
+          <div class="event-date-box">
+            <span class="day">28</span>
+            <span class="month">JUN</span>
+            <span class="weekday">Sábado</span>
+          </div>
+          <div class="event-body">
+            <div class="event-header-tags">
+              <span class="badge badge-cultural"><i class="fas fa-theater-masks"></i> Tradição Popular</span>
+              <span class="badge badge-festejo">Festejo Junino</span>
+            </div>
+            <h3>Grande Noite Cultural: Tradicional Leilão e Forró dos Pescadores</h3>
+            <div class="event-meta">
+              <span class="event-time"><i class="far fa-clock"></i> A partir das 20h00</span>
+              <span class="event-location"><i class="fas fa-map-marker-alt"></i> Praça da Igreja São Pedro</span>
+            </div>
+            <p class="event-description">Grande arremate alegre de prendas doadas, barracas com o autêntico peixe frito com farofa, canjica, quentão e apresentação de sanfoneiros e grupo de dança popular.</p>
+          </div>
+          <div class="event-actions">
+            <button class="btn btn-sm btn-outline-primary btn-add-calendar" title="Adicionar ao Calendário">
+              <i class="fas fa-calendar-plus"></i> Salvar no Calendário
+            </button>
+          </div>
+        </article>
+
+        <!-- 7. LITÚRGICO: Dia Solene de São Pedro e Procissão -->
+        <article class="event-card event-liturgico" data-category="liturgico">
+          <div class="event-date-box">
+            <span class="day">29</span>
+            <span class="month">JUN</span>
+            <span class="weekday">Domingo</span>
+          </div>
+          <div class="event-body">
+            <div class="event-header-tags">
+              <span class="badge badge-liturgico"><i class="fas fa-crown"></i> Dia Festivo</span>
+              <span class="badge badge-festejo">Dia de São Pedro</span>
+            </div>
+            <h3>Dia Solene: Alvorada, Missa Campal & Procissão Fluvial dos Barcos</h3>
+            <div class="event-meta">
+              <span class="event-time"><i class="far fa-clock"></i> 06h Alvorada | 10h Missa | 16h Procissão</span>
+              <span class="event-location"><i class="fas fa-map-marker-alt"></i> Igreja & Cais dos Barcos</span>
+            </div>
+            <p class="event-description">Celebração máxima do padroeiro! O cortejo das embarcações enfeitadas no rio/mar, a bênção solene das redes e pescadores e o encerramento com bênção dos enfermos.</p>
+          </div>
+          <div class="event-actions">
+            <button class="btn btn-sm btn-outline-primary btn-add-calendar" title="Adicionar ao Calendário">
+              <i class="fas fa-calendar-plus"></i> Salvar no Calendário
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <!-- BANNER DE APOIO DA SECRETARIA DE CULTURA NA AGENDA -->
+      <div class="culture-featured-banner" style="margin-top: 4rem;">
+        <div class="culture-icon-badge">
+          <i class="fas fa-landmark"></i>
+        </div>
+        <div class="culture-banner-text">
+          <span class="badge badge-cultural" style="background: rgba(20, 184, 166, 0.3); color: #99f6e4; margin-bottom: 0.5rem;">Apoio à Programação Cultural</span>
+          <h3>Secretaria Municipal de Cultura</h3>
+          <p>As atrações artísticas, musicais, oficinas de capoeira e eventos do Festejo de São Pedro contam com a chancela e apoio estrutural da <strong>Secretaria Municipal de Cultura</strong>, fortalecendo a economia criativa local e a transmissão de saberes tradicionais.</p>
+        </div>
+        <div class="culture-official-stamp">
+          <span>Parceria Oficial</span>
+          <strong>Fomento Cultural</strong>
+        </div>
+      </div>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="site-footer">
+      <div class="footer-top">
+        <div class="footer-col">
+          <h4>Igreja São Pedro</h4>
+          <p>Calendário aberto de celebrações, encontros de espiritualidade e iniciativas culturais comunitárias.</p>
+          <div class="footer-culture-seal">
+            <h5><i class="fas fa-award"></i> Ponto de Cultura & Tradição</h5>
+            <p>Em parceria com a <strong>Secretaria Municipal de Cultura</strong>.</p>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul class="footer-links">
+            <li><a href="/"><i class="fas fa-angle-right"></i> Início</a></li>
+            <li><a href="/sobre.html"><i class="fas fa-angle-right"></i> Sobre</a></li>
+            <li><a href="/festejo.html"><i class="fas fa-angle-right"></i> Festejo de São Pedro</a></li>
+            <li><a href="/capoeira.html"><i class="fas fa-angle-right"></i> Capoeira & Cultura</a></li>
+            <li><a href="/horarios.html"><i class="fas fa-angle-right"></i> Horários de Missas</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Filtros Rápidos</h4>
+          <ul class="footer-links">
+            <li><a href="/agenda.html"><i class="fas fa-angle-right"></i> Ver Todos os Eventos</a></li>
+            <li><a href="/capoeira.html"><i class="fas fa-angle-right"></i> Aulas de Capoeira</a></li>
+            <li><a href="/festejo.html"><i class="fas fa-angle-right"></i> Programação do Festejo</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Dúvidas sobre a Agenda</h4>
+          <p><i class="fas fa-map-marker-alt"></i> Rua São Pedro, 123</p>
+          <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
+          <p><i class="fas fa-envelope"></i> contato@igrejasaopedro.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-inner">
+          <p>&copy; 2026 Paróquia São Pedro. Todos os direitos reservados.</p>
+          <p>Agenda inteligente com tecnologia moderna e segura.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>
+

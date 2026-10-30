@@ -1,8 +1,15 @@
 {
+  "name": "igreja-sao-pedro",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Portal Oficial da Igreja São Pedro - Fé, Cultura, Tradição e Comunidade",
   "scripts": {
-    "start": "servor --reload"
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "dependencies": {
-    "servor": "^4.0.2"
+  "devDependencies": {
+    "vite": "^6.2.0"
   }
 }
